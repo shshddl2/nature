@@ -6,10 +6,10 @@ import lombok.Setter;
 @Getter
 @Setter
 public class Client {
-    private String client_Id;
-    private String client_Password;
-    private String client_Nickname;
-    private String client_Email;
-    private String client_Phone;
+    private String client_id;
+    private String client_password;
+    private String client_nickname;
+    private String client_email;
+    private String client_phone;
 
 }

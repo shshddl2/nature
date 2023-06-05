@@ -7,11 +7,11 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 @Configuration
 public class DBConn {
-    String ip = "localhost";
+    String ip = "192.168.250.33";
     String port = "3306";
     String DB_name = "nature";
-    String id = "root";
-    String pw = "1234";
+    String id = "jihyun";
+    String pw = "wlgus";
     String url = "jdbc:mysql://" + ip + ":" + port + "/" + DB_name + "?characterEncoding=UTF-8&serverTimezone=UTC";
     String sql = null;
     Connection conn = null;

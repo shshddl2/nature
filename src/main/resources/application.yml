@@ -1,9 +1,9 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    username: root
-    url: jdbc:mysql://localhost:3306/test_db?characterEncoding=UTF-8&serverTimezone=Asia/Seoul
-    password: 1234
+    clientname: jihyun
+    url: jdbc:mysql://192.168.250.33:3306/nature?characterEncoding=UTF-8&serverTimezone=Asia/Seoul
+    password: wlgus
 server:
   servlet:
     session:

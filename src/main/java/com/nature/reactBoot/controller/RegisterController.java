@@ -13,16 +13,16 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class RegisterController {
     @RequestMapping(value = "/registerComplete", method = RequestMethod.POST)
     public String registerComplete(@ModelAttribute RegisterForm resForm) {
-
+        System.out.println("controller :: " + resForm.getClient_id());
         DBConn DBconn = new DBConn();
         ClientService clService = new ClientService();
         Client client = new Client();
-        client.setClient_Id(resForm.getClient_Id());
-        client.setClient_Password(resForm.getClient_Password());
-        client.setClient_Nickname(resForm.getClient_Nickname());
-        client.setClient_Email(resForm.getClient_Email());
-        client.setClient_Phone(resForm.getClient_Phone());
-        clService.insertUser(client);
+        client.setClient_id(resForm.getClient_id());
+        client.setClient_password(resForm.getClient_password());
+        client.setClient_nickname(resForm.getClient_nickname());
+        client.setClient_email(resForm.getClient_email());
+        client.setClient_phone(resForm.getClient_phone());
+        clService.insertClient(client);
         return "home";
     }
 
