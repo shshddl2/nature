@@ -1,0 +1,7 @@
+회원가입 페이지
+아이디 : client_Id
+비밀번호 : client_Password
+닉네임 : client_Nickname
+이메일 : client_Email
+폰번호 : client_Phone
+나머지 두 칼럼은 자동 생성이므로 회원가입 페이지에서 건드릴 필요 없음.
